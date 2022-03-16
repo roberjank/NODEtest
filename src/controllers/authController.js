@@ -6,7 +6,7 @@ async function register(req, res) {
   const { email, password, fullname } = req.body;
 
   const hashedPassword = hashPass(password);
-  // res.json({ hashedPassword });
+
   const insertResult = await insertUser(fullname, email, hashedPassword);
 
   return insertResult === false
