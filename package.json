@@ -1,0 +1,37 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "lfbe": "eslint src --fix",
+    "lffe": "eslint public --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roberjank/NODEtest.git"
+  },
+  "author": "R.J.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roberjank/NODEtest/issues"
+  },
+  "homepage": "https://github.com/roberjank/NODEtest#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "demon": "^1.4.4",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
