@@ -12,7 +12,7 @@
 8.npm i joi
 9.npm i jsonwebtoken
 
-# NodeJS Exam
+## NodeJS Exam
 
 Sukurti sistemą, kuri leistų jungtis į grupes ir dalintis sąskaitomis.
 
