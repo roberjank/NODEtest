@@ -14,11 +14,26 @@ async function insertUser(email, pass, fullname) {
     await conn.close();
     return insertResult;
   } catch (error) {
-    console.log('insertUser ===', error);
+    return false;
+  }
+}
+
+async function findUserByEmail(email) {
+  try {
+    const conn = await mysql.createConnection(dbConfig);
+    const sql = `
+    SELECT * FROM ${tableName}
+    WHERE email = ?
+    `;
+    const [userFoundResult] = await conn.execute(sql, [email]);
+    await conn.close();
+    return userFoundResult;
+  } catch (error) {
     return false;
   }
 }
 
 module.exports = {
   insertUser,
+  findUserByEmail,
 };
