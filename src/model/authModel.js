@@ -3,14 +3,14 @@ const dbConfig = require('../dbConfig');
 
 const tableName = 'users';
 
-async function insertUser(email, pass) {
+async function insertUser(email, pass, fullname) {
   try {
     const conn = await mysql.createConnection(dbConfig);
     const sql = `
-        INSERT INTO ${tableName} (email, password)
-        VALUES (?, ?)
+        INSERT INTO ${tableName} (full_name, email, password)
+        VALUES (?, ?, ?)
         `;
-    const [insertResult] = await conn.execute(sql, [email, pass]);
+    const [insertResult] = await conn.execute(sql, [email, pass, fullname]);
     await conn.close();
     return insertResult;
   } catch (error) {
