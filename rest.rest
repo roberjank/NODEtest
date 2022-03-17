@@ -4,9 +4,9 @@ Content-Type: application/json
 
 {
 
-  "fullname": "Petraitis",
-  "email": "Jonas@email.com",
-  "password": "slap123"
+  "fullname": "Antanaitis",
+  "email": "Antanas@email.com",
+  "password": "slap124"
   
 }
 
@@ -17,8 +17,8 @@ Content-Type: application/json
 
 {
 
-  "fullname": "Petraitis",
-  "email": "Jonas@email.com",
-  "password": "slap123"
+  "fullname": "Antanaitis",
+  "email": "Antanas@email.com",
+  "password": "slap124"
   
 }
